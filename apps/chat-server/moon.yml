@@ -1,0 +1,11 @@
+language: 'go'
+
+tasks:
+  build:
+    inputs:
+      - 'src/**/*'
+      - 'go.mod'
+      - 'go.sum'
+    outputs:
+      - 'dist'
+    command: 'go build -o dist/main ./src'
