@@ -3,10 +3,10 @@ package api
 import (
 	"net/http"
 
-	"github.com/shabashab/chattin/apps/chat-server/src/api/controllers"
-	"github.com/shabashab/chattin/apps/chat-server/src/api/middleware"
+	"github.com/shabashab/hackathoniq/apps/chat-server/src/api/controllers"
+	"github.com/shabashab/hackathoniq/apps/chat-server/src/api/middleware"
 
-	_ "github.com/shabashab/chattin/apps/chat-server/docs"
+	_ "github.com/shabashab/hackathoniq/apps/chat-server/docs"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 
@@ -35,7 +35,6 @@ func setupRoutes(p setupRoutesProvide) {
 
 	api.GET("/health", p.HealthController.GetHealth)
 	api.POST("/auth/debug/login", p.AuthController.DebugLogin)
-
 
 	authorized := api.Group("/", p.AuthMiddleware.Handler)
 	{

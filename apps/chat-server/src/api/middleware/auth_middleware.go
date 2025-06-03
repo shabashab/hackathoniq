@@ -5,14 +5,14 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/shabashab/chattin/apps/chat-server/src/services"
+	"github.com/shabashab/hackathoniq/apps/chat-server/src/services"
 )
 
 type AuthMiddleware struct {
 	jwtService *services.JwtService
 }
 
-func NewAuthMiddleware(jwtService *services.JwtService) (*AuthMiddleware) {
+func NewAuthMiddleware(jwtService *services.JwtService) *AuthMiddleware {
 	return &AuthMiddleware{
 		jwtService: jwtService,
 	}
@@ -50,7 +50,7 @@ func (middleware AuthMiddleware) Handler(ctx *gin.Context) {
 
 	user, err := middleware.jwtService.ValidateAndParseJwtToken(tokenString)
 
-	if (err != nil) {
+	if err != nil {
 		ctx.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{
 			"error": "invalid_authorization_token",
 		})

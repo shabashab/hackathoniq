@@ -4,18 +4,18 @@ import (
 	"strconv"
 
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/shabashab/chattin/apps/chat-server/src/config/configs"
-	"github.com/shabashab/chattin/apps/chat-server/src/database/models"
+	"github.com/shabashab/hackathoniq/apps/chat-server/src/config/configs"
+	"github.com/shabashab/hackathoniq/apps/chat-server/src/database/models"
 )
 
 type JwtService struct {
-	authConfig *configs.AuthConfig
+	authConfig   *configs.AuthConfig
 	usersService *UsersService
 }
 
-func NewJwtService(authConfig *configs.AuthConfig, usersService *UsersService) (*JwtService) {
+func NewJwtService(authConfig *configs.AuthConfig, usersService *UsersService) *JwtService {
 	return &JwtService{
-		authConfig: authConfig,
+		authConfig:   authConfig,
 		usersService: usersService,
 	}
 }

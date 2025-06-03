@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"github.com/shabashab/chattin/apps/chat-server/src/database/models"
+	"github.com/shabashab/hackathoniq/apps/chat-server/src/database/models"
 	"gorm.io/gorm"
 )
 
@@ -9,7 +9,7 @@ type UsersRepository struct {
 	db *gorm.DB
 }
 
-func NewUsersRepository(db *gorm.DB) (*UsersRepository) {
+func NewUsersRepository(db *gorm.DB) *UsersRepository {
 	return &UsersRepository{
 		db: db,
 	}

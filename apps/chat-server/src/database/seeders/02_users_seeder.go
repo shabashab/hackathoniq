@@ -3,13 +3,13 @@ package seeders
 import (
 	"fmt"
 
-	"github.com/shabashab/chattin/apps/chat-server/src/database/models"
+	"github.com/shabashab/hackathoniq/apps/chat-server/src/database/models"
 	"gorm.io/gorm"
 )
 
-type UsersSeeder struct {}
+type UsersSeeder struct{}
 
-func NewUsersSeeder() (Seeder) {
+func NewUsersSeeder() Seeder {
 	return &UsersSeeder{}
 }
 
@@ -22,7 +22,7 @@ func (seeder UsersSeeder) Execute(db *gorm.DB) (_ error) {
 
 	result := db.Find(&apps)
 
-	if (result.Error != nil) {
+	if result.Error != nil {
 		return result.Error
 	}
 
@@ -35,7 +35,7 @@ func (seeder UsersSeeder) Execute(db *gorm.DB) (_ error) {
 
 		result = db.Create(&users)
 
-		if (result.Error != nil) {
+		if result.Error != nil {
 			return result.Error
 		}
 	}
@@ -43,7 +43,7 @@ func (seeder UsersSeeder) Execute(db *gorm.DB) (_ error) {
 	return nil
 }
 
-func (UsersSeeder) createUserTag(app *models.App, index int) (*string) {
+func (UsersSeeder) createUserTag(app *models.App, index int) *string {
 	tag := fmt.Sprintf("%s-user-%d", app.Name, index)
 	return &tag
 }

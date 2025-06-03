@@ -1,13 +1,13 @@
 package seeders
 
 import (
-	"github.com/shabashab/chattin/apps/chat-server/src/database/models"
+	"github.com/shabashab/hackathoniq/apps/chat-server/src/database/models"
 	"gorm.io/gorm"
 )
 
-type AppsSeeder struct {}
+type AppsSeeder struct{}
 
-func NewAppsSeeder() (Seeder) {
+func NewAppsSeeder() Seeder {
 	return &AppsSeeder{}
 }
 
@@ -24,7 +24,7 @@ func (*AppsSeeder) Execute(db *gorm.DB) (_ error) {
 
 	result := db.Create(apps)
 
-	if(result.Error != nil) {
+	if result.Error != nil {
 		return result.Error
 	}
 

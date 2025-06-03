@@ -6,9 +6,9 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/shabashab/chattin/apps/chat-server/src/api/controllers"
-	"github.com/shabashab/chattin/apps/chat-server/src/api/middleware"
-	"github.com/shabashab/chattin/apps/chat-server/src/config/configs"
+	"github.com/shabashab/hackathoniq/apps/chat-server/src/api/controllers"
+	"github.com/shabashab/hackathoniq/apps/chat-server/src/api/middleware"
+	"github.com/shabashab/hackathoniq/apps/chat-server/src/config/configs"
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/fx"
@@ -24,9 +24,9 @@ var Module = fx.Module("api",
 	fx.Invoke(setupRoutes),
 )
 
-// @title           Chatting API
+// @title           hackathoniqg API
 // @version         1.0
-// @description     This is the API for the Chatting
+// @description     This is the API for the hackathoniqg
 
 // @securityDefinitions.apiKey BearerAuth
 // @in header
