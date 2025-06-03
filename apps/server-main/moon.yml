@@ -1,11 +1,16 @@
 language: 'go'
 
 tasks:
-  build:
+  build-server:
     inputs:
-      - 'src/**/*'
+      - 'internal/**/*'
+      - 'cmd/server/**/*'
       - 'go.mod'
       - 'go.sum'
     outputs:
       - 'dist'
-    command: 'go build -o dist/main ./src'
+    command: 'go build -o dist/server ./cmd/server/main.go'
+  auto-migrate:
+    command: 'go run ./cmd/auto-migrate/main.go'
+  seed:
+    command: 'go run ./cmd/seed/main.go'
