@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/config/configs"
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/database/models"
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/database/seeders"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/config/configs"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/database/models"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/database/seeders"
 	"go.uber.org/fx"
 	"go.uber.org/zap"
 	"gorm.io/gorm"

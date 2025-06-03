@@ -3,7 +3,7 @@ package seeders
 import (
 	"fmt"
 
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/database/models"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/database/models"
 	"gorm.io/gorm"
 )
 

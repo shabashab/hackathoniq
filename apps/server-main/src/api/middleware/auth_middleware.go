@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/services"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/services"
 )
 
 type AuthMiddleware struct {

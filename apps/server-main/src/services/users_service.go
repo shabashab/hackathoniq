@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/database/models"
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/database/repositories"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/database/models"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/database/repositories"
 )
 
 type UsersService struct {

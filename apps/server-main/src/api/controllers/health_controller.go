@@ -3,7 +3,7 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/services"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/services"
 
 	"github.com/gin-gonic/gin"
 )

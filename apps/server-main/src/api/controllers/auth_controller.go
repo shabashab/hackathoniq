@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/api/dtos"
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/services"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/api/dtos"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/services"
 )
 
 type AuthController struct {

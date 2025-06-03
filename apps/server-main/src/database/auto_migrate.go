@@ -1,8 +1,8 @@
 package database
 
 import (
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/config/configs"
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/database/models"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/config/configs"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/database/models"
 
 	"go.uber.org/fx"
 	"go.uber.org/zap"

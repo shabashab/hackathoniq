@@ -1,4 +1,4 @@
-module github.com/shabashab/hackathoniq/apps/chat-server
+module github.com/shabashab/hackathoniq/apps/server-main
 
 go 1.24.0
 

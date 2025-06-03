@@ -3,10 +3,10 @@ package api
 import (
 	"net/http"
 
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/api/controllers"
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/api/middleware"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/api/controllers"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/api/middleware"
 
-	_ "github.com/shabashab/hackathoniq/apps/chat-server/docs"
+	_ "github.com/shabashab/hackathoniq/apps/server-main/docs"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 

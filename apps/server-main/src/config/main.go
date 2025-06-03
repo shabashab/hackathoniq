@@ -1,7 +1,7 @@
 package config
 
 import (
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/config/configs"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/config/configs"
 
 	"github.com/spf13/viper"
 	"go.uber.org/fx"

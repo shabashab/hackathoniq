@@ -6,9 +6,9 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/api/controllers"
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/api/middleware"
-	"github.com/shabashab/hackathoniq/apps/chat-server/src/config/configs"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/api/controllers"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/api/middleware"
+	"github.com/shabashab/hackathoniq/apps/server-main/src/config/configs"
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/fx"

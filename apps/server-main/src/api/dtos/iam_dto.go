@@ -1,6 +1,6 @@
 package dtos
 
-import "github.com/shabashab/hackathoniq/apps/chat-server/src/database/models"
+import "github.com/shabashab/hackathoniq/apps/server-main/src/database/models"
 
 type IamDto struct {
 	Id uint `json:"id"`
